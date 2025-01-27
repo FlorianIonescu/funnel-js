@@ -1,0 +1,29 @@
+{
+  "name": "@florianionescu/funnel-js",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.2"
+  },
+  "dependencies": {},
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
