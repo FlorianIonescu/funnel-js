@@ -9,7 +9,7 @@ export default class ByPredicate extends Funnel {
     this.predicate = predicate
   }
 
-  run<T>(A: T[]) {
+  run<T>(A: T[]): T[] {
     return A.filter((entry: T) => {
       return this.predicate(entry)
     })

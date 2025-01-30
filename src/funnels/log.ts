@@ -9,7 +9,7 @@ export default class Log extends Funnel {
     this.path = path
   }
 
-  run<T>(context: T[]) {
+  run<T>(context: T[]): T[] {
     const path = this.path
     if (path) {
       console.log(context.map((c) => getByPath(c, path)))

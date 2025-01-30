@@ -10,7 +10,7 @@ export default class Nor extends Funnel {
     this.funnels = funnels
   }
 
-  run<T>(A: T[]) {
+  run<T>(A: T[]): T[] {
     let result = [...A]
 
     for (const funnel of this.funnels) {

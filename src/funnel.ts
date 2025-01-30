@@ -1,3 +1,3 @@
 export default abstract class Funnel {
-  abstract run<T>(context: T[]): any[]
+  abstract run(context: any[]): any[]
 }

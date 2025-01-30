@@ -11,7 +11,7 @@ export default class Or extends Funnel {
     this.funnels = funnels
   }
 
-  run<T>(A: T[]) {
+  run<T>(A: T[]): T[] {
     let left = [...A]
     let result: T[] = []
 

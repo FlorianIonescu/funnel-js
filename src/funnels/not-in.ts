@@ -9,7 +9,7 @@ export default class NotIn extends Funnel {
     this.B = B
   }
 
-  run<T>(A: T[]) {
+  run<T>(A: T[]): T[] {
     return A.filter((entry) => {
       if (this.B.find((e) => e === entry)) return false
 

@@ -8,7 +8,7 @@ export default class ByType extends Funnel {
     this.type = type
   }
 
-  run<T>(A: T[]) {
+  run<T>(A: T[]): T[] {
     return A.filter((entry) => entry instanceof this.type)
   }
 }
