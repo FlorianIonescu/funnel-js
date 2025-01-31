@@ -1,6 +1,5 @@
 {
   "name": "@florianionescu/butterfly-engine",
-  "private": true,
   "version": "1.0.0",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
